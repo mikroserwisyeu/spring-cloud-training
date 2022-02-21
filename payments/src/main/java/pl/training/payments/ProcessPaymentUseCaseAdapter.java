@@ -10,7 +10,7 @@ class ProcessPaymentUseCaseAdapter implements ProcessPaymentUseCase {
     private final ProcessPaymentService processPaymentService;
     private final PaymentsMapper paymentsMapper;
 
-    @Atomic
+    //@Atomic
     @Override
     public Payment process(PaymentRequest paymentRequest) {
         var paymentRequestDomain = paymentsMapper.toDomain(paymentRequest);
