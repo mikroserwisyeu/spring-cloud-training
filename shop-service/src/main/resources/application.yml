@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+logging:
+  level:
+    org.javamoney.moneta.FastMoney: OFF
+---
+spring:
+  config:
+    activate:
+      on-profile: development
+logging:
+  level:
+    org.springframework.transaction: trace
+    pl.training: DEBUG
+
