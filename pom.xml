@@ -17,13 +17,10 @@
     </properties>
 
     <modules>
-        <module>orders</module>
-        <module>orders-api</module>
+        <module>commons</module>
         <module>payments</module>
         <module>payments-api</module>
-        <module>commons</module>
         <module>shop-service</module>
-        <module>payments-api</module>
     </modules>
 
 </project>
