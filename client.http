@@ -3,7 +3,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "value": "10 PLN",
+  "value": "50 PLN",
   "additionalInfo": {
     "cardNumber": "1234567890",
     "cvv": 255
@@ -12,6 +12,6 @@ Content-Type: application/json
 
 ###
 
-GET  http://localhost:8080/payments/05cc34de-a01c-4661-9308-c75d7f04b223
+GET  http://localhost:8080/payments/05cc34de-a01c-4661-9308-c75d7f04b523
 Accept: application/json
 Content-Type: application/json

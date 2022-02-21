@@ -1,4 +1,4 @@
 package pl.training.payments;
 
-class PaymentNotFoundException extends RuntimeException {
+public class PaymentNotFoundException extends RuntimeException {
 }

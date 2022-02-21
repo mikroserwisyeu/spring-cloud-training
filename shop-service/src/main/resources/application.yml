@@ -14,4 +14,3 @@ logging:
   level:
     org.springframework.transaction: trace
     pl.training: DEBUG
-
