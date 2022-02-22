@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    driver-class-name: org.postgresql.Driver
+logging:
+  level:
+    org.javamoney.moneta.FastMoney: OFF
