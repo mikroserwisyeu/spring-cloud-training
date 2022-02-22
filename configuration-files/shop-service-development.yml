@@ -9,6 +9,11 @@ logging:
   level:
     org.springframework.transaction: trace
     pl.training: DEBUG
+feign:
+  client:
+    config:
+      default: #productsClient
+        loggerLevel: BASIC
 api:
   products: http://WAREHOUSE-SERVICE/products/
 
