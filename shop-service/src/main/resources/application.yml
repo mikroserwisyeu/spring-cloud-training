@@ -7,4 +7,4 @@ spring:
     active: development
   cloud:
     config:
-      label: master
+      label: 004-Config-Discovery-Gateway-servers
