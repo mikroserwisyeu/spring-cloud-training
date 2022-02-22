@@ -1,14 +1,15 @@
 server:
   port: 10000
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/training
-    username: admin
-    password: admin
 logging:
   level:
     org.springframework.transaction: trace
     pl.training: DEBUG
+feign:
+  client:
+    config:
+      default: #productsClient
+        loggerLevel: BASIC
 api:
   products: http://WAREHOUSE-SERVICE/products/
+  payments: http://PAYMENTS-SERVICE/payments/
 
