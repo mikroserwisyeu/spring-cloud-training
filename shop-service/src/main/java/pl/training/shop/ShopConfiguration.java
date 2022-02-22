@@ -1,9 +1,11 @@
 package pl.training.shop;
 
 import org.mapstruct.factory.Mappers;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.client.RestTemplate;
 import pl.training.commons.FastMoneyMapper;
 
 @EnableTransactionManagement
@@ -22,5 +24,11 @@ public class ShopConfiguration {
                 .apis(withClassAnnotation(RestController.class))
                 .build();
     }*/
+
+    @LoadBalanced
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 
 }

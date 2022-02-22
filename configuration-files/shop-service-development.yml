@@ -9,4 +9,6 @@ logging:
   level:
     org.springframework.transaction: trace
     pl.training: DEBUG
+api:
+  products: http://WAREHOUSE-SERVICE/products/
 

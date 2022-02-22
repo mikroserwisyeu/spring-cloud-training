@@ -14,4 +14,8 @@ public class FastMoneyMapper {
         return money != null ? money.toString() : LocalFastMoney.zero().toString();
     }
 
+    public FastMoney toMoney(Long value) {
+        return  value != null ? LocalFastMoney.of(value) : LocalFastMoney.zero();
+    }
+
 }
