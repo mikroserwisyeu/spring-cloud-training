@@ -28,3 +28,23 @@ Content-Type: application/json
     "1": 2
   }
 }
+
+###
+
+GET http://localhost:8888/application-default.yml
+
+###
+
+GET http://localhost:8888/application-default.properties
+
+###
+
+GET http://localhost:8888/application-development.yml
+
+###
+
+GET http://localhost:8888/shop-service-default.yml
+
+###
+
+GET http://localhost:8888/shop-service-development.yml

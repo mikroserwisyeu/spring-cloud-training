@@ -5,5 +5,4 @@ spring:
     url: jdbc:postgresql://localhost:5432/training
     username: admin
     password: admin
-api:
-  products: http://WAREHOUSE-SERVICE/products
+
