@@ -2,6 +2,11 @@ spring:
   jpa:
     generate-ddl: true
     open-in-view: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/training
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
 logging:
   level:
     org.javamoney.moneta.FastMoney: OFF
