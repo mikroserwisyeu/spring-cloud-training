@@ -1,12 +1,12 @@
 package pl.training.shop.orders.products;
 
-import lombok.Value;
+import lombok.Data;
 
-@Value
+@Data
 public class ProductDto {
 
-    Long id;
-    String name;
-    Long price;
+    private Long id;
+    private String name;
+    private Long price;
 
 }

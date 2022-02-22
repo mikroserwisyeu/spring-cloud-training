@@ -1,11 +1,13 @@
 package pl.training.warehouse;
 
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;
 import pl.training.commons.Page;
 import pl.training.commons.ResultPage;
 
 import java.util.List;
 
+@Log
 @Service
 class FakeProductsService implements ProductsService {
 
@@ -21,6 +23,7 @@ class FakeProductsService implements ProductsService {
 
     @Override
     public Product getProduct(Long id) {
+        log.info("Returning info about product with id: " + id);
         return PRODUCTS.stream()
                 .filter(product -> product.getId().equals(id))
                 .findFirst()
